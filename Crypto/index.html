@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BlockchaneMe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/Apps-Electrum-icon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="scripts/script.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="mainCont">
+    <div class="firstSection">
+      <!-- <div id="particles-js"></div> -->
+      <div class="menuWrapper">
+        <div class="menu">
+          <a href="#"><img class="logo" src="./images/Apps-Electrum-icon.png" alt=""><span class="logoS">BlockchaneMe</span></a>
+          <a href="#" class="hamburger"><img src="images/hamburger.png" alt=""></a>
+          <div class="fix">
+            <ul class="btnMenu">
+              <li><a href="#" data-btn="0" class="activeBtn">Home</a></li>
+              <li><a href="#" data-btn="1">Exchange</a></li>
+              <li><a href="#" data-btn="2">Info</a></li>
+              <li><a href="#" data-btn="3">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="intro">
+        <p>Say NO! to Banks!</p>
+        <p>Use crypto instead.</p>
+      </div>
+      <div class="coinCont">
+        <img class="btc" src="images/Bitcoin.png" alt="">
+      </div>
+      <div class="btnPlace">
+        <div class="btnContainer">
+          <button type="button" class="btn btn-primary Bitcoin">Click to exchange <span style="color: rgb(255, 234, 157); font-weight: bold;"> Bitcoin</span></button>
+          <button type="button" class="btn btn-primary Ethereum">Click to exchange <span style="color: #4D7495;font-weight: bold;">Ethereum</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="exchangeInputs B">
+      <form data-toggle="validator" role="form">
+        <div class="form-group">
+          <!-- <label for="inputName" class="control-label NameText">Your Name <span class="starColor">*</span></label> -->
+          <input type="text" class="form-control" id="amountBitcoin" data-minlength="1" pattern="[-+]?[0-9]*\.?[0-9]+" maxlength="100" data-error="Write number" placeholder="Amount of Bitcoin you want to change" required>
+          <p class="result">You get <span class="numberResult">1</span> USD</p>
+          <button type="submit" class="btn btn-primary btnSubmit Exchange">Exchange</button>
+        </div>
+      </form>
+    </div>
+    <div class="exchangeInputs E">
+      <form data-toggle="validator" role="form">
+        <div class="form-group">
+          <!-- <label for="inputName" class="control-label NameText">Your Name <span class="starColor">*</span></label> -->
+          <input type="text" class="form-control" id="amountEthereum" data-minlength="1" pattern="[-+]?[0-9]*\.?[0-9]+" maxlength="100" data-error="Write number" placeholder="Amount of Ethereum you want to change" required>
+          <p class="result">You get <span class="numberResult">1</span> USD</p>
+          <button type="submit" class="btn btn-primary btnSubmit Exchange">Exchange</button>
+        </div>
+      </form>
+    </div>
+    <div class="content clearfix">
+      <p class="header">What is Blockchain Technology?</p>
+      <div class="leftCS">
+        "The practical consequence […is…] for the first time, a way for one Internet user to transfer a unique piece of digital property to another Internet user, such that the transfer is guaranteed to be safe and secure, everyone knows that the transfer has taken place, and nobody can challenge the legitimacy of the transfer. The consequences of this breakthrough are hard to overstate."
+
+- Marc Andreessen
+
+From a cruising altitude, a blockchain might not look that different from things you're familiar with, say Wikipedia.
+
+With a blockchain, many people can write entries into a record of information, and a community of users can control how the record of information is amended and updated. Likewise, Wikipedia entries are not the product of a single publisher. No one person controls the information.
+
+Descending to ground level, however, the differences that make blockchain technology unique become more clear. While both run on distributed networks (the internet), Wikipedia is built into the World Wide Web (WWW) using a client-server network model.
+
+A user (client) with permissions associated with its account is able to change Wikipedia entries stored on a centralized server.
+
+Whenever a user accesses the Wikipedia page, they will get the updated version of the 'master copy' of the Wikipedia entry. Control of the database remains with Wikipedia administrators allowing for access and permissions to be maintained by a central authority.
+      </div>
+      <div class="rightCS">
+        <img src="images/blockchain.png" alt="" />
+      </div>
+    </div>
+    <div class="content clearfix">
+      <p class="header">Is blockchain technology the new internet?</p>
+      <div class="leftCS">
+        <img src="images/overview2.png" alt="" />
+      </div>
+      <div class="rightCS">
+        The blockchain is an undeniably ingenious invention – the brainchild of a person or group of people known by the pseudonym,  Satoshi Nakamoto. But since then, it has evolved into something greater, and the main question every single person is asking is: What is Blockchain?
+  By allowing digital information to be distributed but not copied, blockchain technology created the backbone of a new type of internet. Originally devised for the digital currency, Bitcoin, the tech community is now finding other potential uses for the technology.
+  Bitcoin has been called “digital gold,” and for a good reason. To date, the total value of the currency is close to $9 billion US. And blockchains can make other types of digital value. Like the internet (or your car), you don’t need to know how the blockchain works to use it. However, having a basic knowledge of this new technology shows why it’s considered revolutionary.
+        <!-- <img src="images/blockchain.png" alt="" /> -->
+      </div>
+    </div>
+    <hr>
+    <div class="formContainer">
+      <div class="innerFormCont">
+        <form data-toggle="validator" role="form">
+          <div class="nameMail clearfix">
+            <!-- YOUR NAME  -->
+            <div class="form-group leftCS">
+              <label for="inputName" class="control-label NameText">Your Name</label>
+              <input type="text" class="form-control" id="inputName" data-minlength="3" pattern="[a-zA-Zа-яА-Я]+$" maxlength="100" placeholder="Enter your name here" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <!-- END YOUR NAME  -->
+            <!-- Email -->
+            <div class="form-group rightCS TopZero">
+              <label for="inputEmail" class="control-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Invalid mail" required>
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+          <!--END Email -->
+          <!-- Text Area -->
+          <div class="form-group">
+            <label for="comment">Your Message</label>
+            <textarea class="form-control" pattern="/^\s*$/g" data-minlength="10" maxlength="500" rows="5" id="comment" placeholder="Enter your message here" required data-error="Fill some real text"></textarea>
+            <div class="help-block with-errors"></div>
+          </div>
+          <!-- End Text Area -->
+          <div class="form-group">
+            <div class="alert alert-success inactive" role="alert" id="success_message">Your message was succesfully send.</div>
+            <button type="submit" class="btn btn-primary btnSubmit Contact">Send your message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <div class="footer clearfix">
+      <span>2017©BlockchaneMe</span>
+      <ul class="logos">
+        <li><a href="#"><img src="images/fb.png" alt=""></a></li>
+        <li><a href="#"><img src="images/tw.png" alt=""></a></li>
+        <li><a href="#"><img src="images/in.png" alt=""></a></li>
+        <li><a href="#"><img src="images/gp.png" alt=""></a></li>
+      </ul>
+    </div>
+    <!-- <script src="scripts\particles.js"></script>
+    <script src="scripts\app.js"></script> -->
+  </div>
+</body>
+</html>
