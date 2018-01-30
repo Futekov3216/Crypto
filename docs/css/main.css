@@ -1,0 +1,481 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  min-height:1300px ;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+  background-color: 1px solid #DBDBDB;
+  width: 100%;
+}
+/*.clearfix { display: inline-block; }*/
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/*Start first section*/
+.firstSection{
+  position: relative;
+  width: 100%;
+  height: 900px;
+  background: #0006;
+  background: url("../images/darkNetwork.jpg") repeat;
+  background-repeat: repeat-y repeat-x;
+  background-size: 100%;
+  background-attachment: fixed;
+  top:0;
+
+}
+
+.logoS{
+  position: absolute;
+  left: 67px;
+  top: 14px;
+  color: white;
+}
+/*#particles-js{
+  position: absolute;
+}*/
+/*End first section*/
+/*START MENU*/
+.menu{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  height: 50px;
+  position: fixed;
+  z-index: 2;
+}
+
+.logo{
+  position: absolute;
+  left: 29px;
+  top: 7px;
+  width: 35px;
+}
+
+ul.btnMenu {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  display: table;
+}
+
+ul.btnMenu li {
+  float: left;
+  padding: 0px 30px;
+}
+
+ul.btnMenu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 0px;
+  text-decoration: none;
+}
+.activeBtn{
+  border-bottom: 3px solid rgb(0,155,237);
+  font-weight: bold;
+}
+.fix{
+  width: 900px;
+  margin: auto;
+}
+.menuWrapper{
+  position: relative; height: 50px;
+}
+
+a.hamburger{
+  display: none;
+  width: 50px;
+  height: 34px;
+  float: right;
+  margin: 8px 5px 0px 0px;
+}
+a.hamburger img{
+  width: 100%;
+}
+.activeBurger{
+  display: block!important;
+}
+
+/*End Menu*/
+/*start intro*/
+.intro{
+  padding-top: 30px;
+  color: white;
+  text-align: center;
+}
+
+.intro p:nth-child(1){
+  font-size: 68px;
+  text-shadow: -1px 2px 2px rgba(150, 150, 150, 1);
+  line-height: 84px;
+}
+.intro p:nth-child(2){
+  font-size: 57px;
+  text-shadow: -1px 2px 2px rgba(150, 150, 150, 1);
+  line-height: 56px;
+  padding-top: 30px;
+  padding-bottom:40px ;
+
+}
+.coinCont{
+ padding-bottom: 58px;
+ height: auto;
+ width: 95%;
+ margin: auto;
+}
+.coinCont img{
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 225px;
+  -webkit-animation-name: btc; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: btc;
+  animation-duration: 8s;
+}
+@keyframes btc {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.rotate{
+  -webkit-transform: rotate(180deg);
+  transform: rotateY(360deg);
+    transition: transform 2s;
+}
+
+/*@media screen and (max-height: 900px) {
+  .firstSection{
+    background-size: cover;
+  }
+}*/
+/*End intro*/
+/*Start btnPlace*/
+.btnPlace{
+  height:170px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.34);
+  position: absolute;
+  bottom: 0;
+}
+.btnContainer{
+  width: 458px;
+  position: relative;
+  margin: auto;
+  height: 48px;
+  top: 58px;
+}
+.btnContainer button{
+  width: 208px;
+  height: 48px;
+  background: rgb(1,186,214);
+  border:1px solid rgb(1,186,214);
+  -webkit-box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.btnContainer button:nth-child(2){
+  float: right;
+}
+
+/*End btnPlace*/
+/*Start Second section*/
+.content{
+  width: 1000px;
+  margin:auto;
+  padding-bottom: 50px;
+}
+.header{
+  padding: 30px 0px;
+  color: black;
+  text-align: center;
+  font-size: 31px;
+}
+.leftCS{
+  width: 480px;
+  float: left;
+  font-size: 15px;
+}
+.leftCS img{
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+.rightCS{
+  width: 480px;
+  float: right;
+}
+.rightCS img{
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+/*End second section*/
+/*Start Form Container*/
+.formContainer{
+  width: 95%;
+  margin-top: 45px;
+  margin: auto;
+}
+.innerFormCont{
+  width: 1000px;
+  margin: auto;
+  margin-top:45px;
+}
+.starColor{
+  color:#01bad6;
+}
+.btnSubmit{
+  margin: 40px auto;
+  display: block;
+  width: 208px;
+  height: 48px;
+  background: rgb(1,186,214);
+  border:1px solid rgb(1,186,214);
+  -webkit-box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.Exchange{
+  width: 100%;
+  position: relative;
+}
+
+.inactive{
+  display: none;
+}
+.active{
+  display: block;
+}
+.exchangeInputs{
+  margin-top: 10px;
+  margin: 10px auto;
+  width: 1000px;
+  position: relative;
+  background: transparent;
+  /*border: 1px solid grey;*/
+  border-radius: 12px;
+  display: none;
+}
+.exchangeInputs #amountBitcoin{
+    width: 48%;
+    background: url(../images/Bitcoin.png) 97% no-repeat;
+
+    background-size: 27px;
+    float:left;
+}
+.exchangeInputs #amountEthereum{
+  width: 48%;
+  background: url(../images/eterLogo.jpg) 100% no-repeat;
+  background-size: 46px;
+  float:left;
+}
+
+.result{
+  float:right;
+  width: 48%;
+  font-size: 22px;margin-left: 20px;
+  padding: 1px 20px 1px 42px;
+  border: 1px solid #d9d9d9;
+  background: url(../images/USD.png) no-repeat;
+
+  background-size: 33px;
+  border-radius: 4px;
+}
+.overflow{
+  background: black;
+  opacity: 0.4;
+  width: 100%;
+  height:100%;
+  position: fixed;
+  z-index: 3;
+  transition: 0.3s;
+
+}
+.msgCont{
+  position: fixed;
+  background: rgb(1,186,214);
+  z-index: 4;
+  width: 300px;
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  margin-top: -136px; /* Negative half of height. */
+  margin-left: -150px;
+  border-radius: 5px;
+  box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  border: 1px solid rgb(1,186,214);
+}
+.msgtext{
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 27px;
+  text-align: center;
+  text-shadow: -1px 2px 2px rgba(150, 150, 150, 1);
+}
+.msgBtn{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 26px;
+  left: 72px;
+  width: 150px;
+  padding: 15px;
+  margin-bottom: 25px;
+  box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
+
+}
+/*End Form Container*/
+/*start footer*/
+.footer{
+  font-size: 13px;
+  width: 1000px;
+  margin: 30px auto;
+
+}
+.footer ul {
+  float: right;
+}
+
+.logos li{
+  display: inline;
+}
+.btn.disabled{
+  background: red;
+}
+.btn.disabled:hover{
+  background: red;
+}
+
+/*End footer*/
+@media (max-width: 1100px) {
+  .innerFormCont{
+    width: 100%;
+  }
+  .NameText{
+    float:left!important;
+  }
+  .TopZero{
+    padding-top: 0px!important;
+  }
+  .exchangeInputs{
+    width: 90%;
+  }
+  ul.btnMenu {
+    margin: 0;
+  }
+
+  .fix {
+   width: 200px;
+   right: 0;
+   position: absolute;
+   top: 50px;
+
+ }
+ a.hamburger{
+   display: block;
+ }
+
+ ul.btnMenu {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  display: none;
+}
+
+ul.btnMenu li {
+ float: left;
+ padding: 0px 30px;
+ background: black;
+ opacity: 0.75;
+ width: 200px;
+}
+  .content{
+    width: 95%;
+    margin: auto;
+  }
+  .leftCS{
+    width: 100%;
+    text-align: center;
+  }
+  .rightCS{
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .footer{
+    width: 100%;
+    text-align: center;
+  }
+  .footer span{
+    display: block;
+    margin: auto;
+
+  }
+  .footer ul {
+    float: none;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .firstSection {
+    height: auto;
+  }
+  .coinCont {
+    padding-bottom: 227px;
+    /*width: 95%;*/
+  }
+}
+@media (max-width: 500px) {
+  .btnContainer {
+    width: 211px;
+    position: relative;
+    margin: auto;
+    height: auto;
+    top: 0px;
+    display: block;
+    float: none;
+  }
+  .btnContainer button:nth-child(2){
+    float: left;
+    margin-top: 26px;
+  }
+  .btnPlace {
+    padding-top: 7px;
+    height: 136px;
+  }
+  .rightCS > img{
+    width: 95%;
+  }
+}
+@media (max-width: 700px){
+  .exchangeInputs #amountBitcoin{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 23px;
+  }
+  .exchangeInputs #amountEthereum{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 23px;
+  }
+  .result{
+    width: 100%;
+    height:60px;
+    text-align: center;
+    padding: 12px;
+    background-position: 97%;
+    margin-top: 10px;
+  }
+}
